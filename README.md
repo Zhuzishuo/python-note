@@ -4,7 +4,7 @@
 
   - 对象引用
 
-- 函数
+- [函数](https://github.com/Zhuzishuo/python-note/blob/master/%E5%87%BD%E6%95%B0.md)
 
   - 函数式编程
 
