@@ -1,6 +1,6 @@
-# Python学习笔记 —— 异常处理
+# 异常处理
 
-### 一、异常
+### 1、异常
 
 ```python
 """
@@ -59,9 +59,9 @@ a = input('请输入你的选择：')
 test_exception(a)
 ```
 
-### 二、断言
+### 2、断言
 
-断言比较简单，语法：assert 表达式 [, 参数]
+断言比较简单，语法：assert 表达式 \[, 参数]
 
 ```python
 def test_assert(a):
@@ -72,11 +72,11 @@ a = int(input('请输入数字：'))
 test_assert(a)
 ```
 
-### 三、上下文
+### 3、上下文
 
-可以从右边链接了解上下文：[*Python*3之 *contextlib* - 天真莫离 - 博客园](https://www.cnblogs.com/wang-yc/p/6640873.html)
+可以从右边链接了解上下文：[_Python_3之 _contextlib_ - 天真莫离 - 博客园](https://www.cnblogs.com/wang-yc/p/6640873.html)
 
-### 四、常见异常类
+### 4、常见异常类
 
 ```
 AttributeError 试图访问一个对象没有的属性，比如foo.x，但是foo没有属性x
@@ -107,4 +107,3 @@ ValueError 传入一个调用者不期望的值，即使值的类型是正确的
 
 Exception
 ```
-

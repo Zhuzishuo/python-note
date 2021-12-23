@@ -1,19 +1,14 @@
-# Python学习笔记 —— 语法基础
-[TOC]
+# 语法基础
 
 ## 一、基础语句
 
 简单的语句一些直接上代码了
 
-- 输出`print()`
-
-- 输入`input()`
-
-- 循环`if 条件:`
-
-- 循环`for i in rang:`或`while 条件:`
-
-- 注释`#`
+* 输出`print()`
+* 输入`input()`
+* 循环`if 条件:`
+* 循环`for i in rang:`或`while 条件:`
+* 注释`#`
 
 ```python
 username = "zhuzishuo"
@@ -49,39 +44,36 @@ else:
     print("臭不要脸，错这么多次还来！")
 ```
 
-
 ## 二、数据类型
 
 ### 1、数字Number
-
-
 
 ### 2、字符串String
 
 **String 操作**
 
-- 重复输出字符串
+* 重复输出字符串
 
 ```python
 print('hello'*20)
 ```
 
-- []，[:] 通过索引获取字符串中字符，这里和列表的切片操作是相同的
+* \[]，\[:] 通过索引获取字符串中字符，这里和列表的切片操作是相同的
 
 ```python
 print('helloworld'[2:])
 ```
 
-- 关键字 in
+* 关键字 in
 
 ```python
 print(123 in [23,45,123])
 print('el' in 'hello')
 ```
 
-- 字符串格式 % 
+* 字符串格式 %
 
-> '''  '''也可作多行注释用
+> ''' '''也可作多行注释用
 
 ```python
 name = input("Name is :")
@@ -107,7 +99,7 @@ you will be retired in %d year
 print(msg)
 ```
 
-- 字符串拼接
+* 字符串拼接
 
 ```python
 a = '123'
@@ -126,16 +118,15 @@ print(c)
 
 **查**
 
-- 索引（下标），都是从0开始  
-- 切片  
-
-- count：查某个元素的出现次数  
+* 索引（下标），都是从0开始
+* 切片
+* count：查某个元素的出现次数
 
 ```python
 t = ['to','be','or','not','to','be'].count('to')
 ```
 
-- index：根据内容找其对应的位置  
+* index：根据内容找其对应的位置
 
 ```python
 a = ['to','be','or','not','to','be','to']
@@ -143,7 +134,7 @@ print(a.index('to',5))
 #通过元素的值获取对应的下标，若有重复则获取第一个的下标，后面的数字是表示从这一下标开始找该值，可用于重复值找非第一个的下标
 ```
 
-- 关键字in：查看元素是否在列表中  
+* 关键字in：查看元素是否在列表中
 
 ```python
 a = ['to','be','or','not','to','be','to']
@@ -152,7 +143,7 @@ print("afdfasd" in a)
 
 **增**
 
-- a.append() 追加  
+* a.append() 追加
 
 ```python
 a = [1,2,3,4,5,6,7,8,9,10]
@@ -160,7 +151,7 @@ a.append(11)#将数据添加到列表最后位置
 print(a)
 ```
 
-- a.insert(index,"context")  
+* a.insert(index,"context")
 
 ```python
 a = [1,2,3,4,5,6,7,8,9,10]
@@ -168,7 +159,7 @@ a.insert(1,12)#将数据添加到指定下标处
 print(a)
 ```
 
-- a.extend(b) 拓展  
+* a.extend(b) 拓展
 
 ```python
 a = [1,2,3]
@@ -180,7 +171,7 @@ print(b)
 
 **改**
 
-- a[index] = "context"  
+* a\[index] = "context"
 
 ```python
 a = [1,2,3,4,5,6,7,8,9,10]
@@ -188,7 +179,7 @@ a[1] = 100
 print(a)
 ```
 
-- a[start:end] = [a,b,c]  
+* a\[start:end] = \[a,b,c]
 
 ```python
 a = [1,2,3,4,5,6,7,8,9,10]
@@ -198,7 +189,7 @@ print(a)
 
 **删**
 
-- a.remove("context")  
+* a.remove("context")
 
 ```python
 a = [1,2,3,4,5,6,7,8,9,10]
@@ -206,7 +197,7 @@ a.remove(2)#只能通过值删除，不能通过下标删除，以单个元素�
 print(a)
 ```
 
-- b = a.pop(index)  
+* b = a.pop(index)
 
 ```python
 b = a.pop(2)#能通过下标删除值，并将删除的值返回，没填写index，默认是最后一个值
@@ -216,7 +207,7 @@ print(a)
 print("b : %d ; c : %d" % (b,c))
 ```
 
-- del a[index]，del a  
+* del a\[index]，del a
 
 ```python
 del a[2]#删除下标对应元素
@@ -225,11 +216,11 @@ del a#可删除整个列表
 print(a)
 ```
 
-- a.clear() 清空  
+* a.clear() 清空
 
 **排序**
 
-- x.reverse() 倒置  
+* x.reverse() 倒置
 
 ```python
 a = ['to','be','or','not','to','be','to']
@@ -237,7 +228,7 @@ a.reverse()#倒置元素位置
 print(a)
 ```
 
-- x.sort() 排序  
+* x.sort() 排序
 
 ```python
 x = [3,1,5,4,5,2,6]
@@ -245,7 +236,7 @@ x.sort()
 print(x)
 ```
 
-- x.sort(reverse=True) 反向排序  
+* x.sort(reverse=True) 反向排序
 
 ```python
 a = ['to','be','or','not','to','be','to']
@@ -255,7 +246,7 @@ print(a)
 
 **身份判断**
 
-- type(a) is list  
+* type(a) is list
 
 ```python
 a = [1,2,3,4,5,6,7,8,9,10]
@@ -294,7 +285,7 @@ dict2.get('dfafasd')#用get来避免KeyError
 
 **改**
 
-- 通过键更改
+* 通过键更改
 
 ```python
 li = [34,52,3,6,24]
@@ -304,7 +295,7 @@ dict3['hobby'] = 'study'
 print(dict3)
 ```
 
-- update 更新，没有的键值对添加进去，存在的键值对覆盖
+* update 更新，没有的键值对添加进去，存在的键值对覆盖
 
 ```python
 dict4 = {'name': 'zhuzishuo', 'age': 23, 'hobby': 'girl'}
@@ -320,7 +311,7 @@ print(dict5)
 print(dict6)
 ```
 
-- .setdefault('key',values)
+* .setdefault('key',values)
 
 ```python
 dict1 = {'name':'zhuzishuo'}
@@ -337,7 +328,7 @@ print(dict1)
 
 **删**
 
-- del
+* del
 
 ```python
 dict7 = {'1':'fsds','dadfad':14314}
@@ -347,7 +338,7 @@ del dict7
 print(dict7)
 ```
 
-- dict.pop('key')：删除字典中的键值对，并返回值
+* dict.pop('key')：删除字典中的键值对，并返回值
 
 ```python
 dict7 = {'1':'fsds','dadfad':14314}
@@ -355,7 +346,7 @@ ret = dict7.pop('1')
 print(ret)
 ```
 
-- dict.popitem()：随机删除某组键值对，并以元组方式返回值
+* dict.popitem()：随机删除某组键值对，并以元组方式返回值
 
 ```python
 dict7 = {'1':'fsds','dadfad':14314}
@@ -363,7 +354,7 @@ a = dict7.popitem()
 print(a,dict7)
 ```
 
-- dict.clear()：清空字典
+* dict.clear()：清空字典
 
 ```python
 dict7 = {'1':'fsds','dadfad':14314}
@@ -394,17 +385,15 @@ for i in dic2:
     print(i,dic2[i])
 ```
 
-> 推荐使用第二种方法
-> 第一种方法中dic2.items()需要将dic2字典转换为items的列表
-> 这其中的转换需要时间，而且所耗费的时间比遍历的时间还多
+> 推荐使用第二种方法 第一种方法中dic2.items()需要将dic2字典转换为items的列表 这其中的转换需要时间，而且所耗费的时间比遍历的时间还多
 
-- in关键字：测试一个字典是否包含一个键
+* in关键字：测试一个字典是否包含一个键
 
 ```python
 print('one' in dict2)
 ```
 
-- 其他操作以及涉及到的方法
+* 其他操作以及涉及到的方法
 
 ```python
 dict8 = dict.fromkeys(['host1','host2','host3'],'test')
@@ -427,8 +416,8 @@ set是一个无序且不重复的元素集合，有如下特性：
 1. 元素不重复
 2. 元素为不可变对象
 
-- 集合支持用in和not in操作符检查成员
-- 由len()内建函数得到集合的基数(大小)
-- 由于集合本身是无序的，不可以为集合创建索引或执行切片(slice)操作，也没有键(keys)可用来获取集合中元素的值， 用 for 循环迭代集合的元素。
+* 集合支持用in和not in操作符检查成员
+* 由len()内建函数得到集合的基数(大小)
+* 由于集合本身是无序的，不可以为集合创建索引或执行切片(slice)操作，也没有键(keys)可用来获取集合中元素的值， 用 for 循环迭代集合的元素。
 
 > set和dict一样，只是没有value，相当于dict的key集合，由于dict的key是不重复的，且key是不可变，且set对象是一组无序排列的可哈希的值

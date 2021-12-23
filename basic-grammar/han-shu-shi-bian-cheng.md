@@ -1,6 +1,4 @@
-# Python学习笔记 —— 函数式编程
-
-[TOC]
+# 函数式编程
 
 ## 一、高阶函数
 
@@ -14,9 +12,9 @@ python中内建了`map()` 、`reduce()`、`filter()`、`sorted()`高阶函数：
 
 `map(function, sequence[, sequence, ...] )`
 
-- function：是一个函数
-- sequence：是一个或多个序列，取决于function需要几个参数
-- 返回值是一个`map`（`Iterator`）
+* function：是一个函数
+* sequence：是一个或多个序列，取决于function需要几个参数
+* 返回值是一个`map`（`Iterator`）
 
 ```python
 upper_name = map(lambda x: x.title() , ['zhuzishuo','hahahah','xixixi'])
@@ -40,13 +38,9 @@ Xixixi
 
 `reduce(function, sequence)`
 
-- function：是一个函数
-
-
-- sequence：`function`作用的序列（`[x1, x2, x3, ...]`）
-
-
-- 返回值是所有元素累积计算的结果
+* function：是一个函数
+* sequence：`function`作用的序列（`[x1, x2, x3, ...]`）
+* 返回值是所有元素累积计算的结果
 
 ```python
 from functools import reduce
@@ -70,9 +64,9 @@ reduce函数每次操作两个参数（前面所有元素操作累积计算的�
 
 `filter(function, sequence)`
 
-- function：是一个函数
-- sequence：是一个序列（`Iterable`）
-- 返回值是一个`Iterator`
+* function：是一个函数
+* sequence：是一个序列（`Iterable`）
+* 返回值是一个`Iterator`
 
 ```python
 def a(x):
@@ -285,4 +279,3 @@ print(a)
 64
 '''
 ```
-
